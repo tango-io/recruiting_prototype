@@ -1,7 +1,5 @@
 var recruiting = angular.module('recruitingTS', ['mm.foundation']);
 
-angular.bootstrap(document.body, ['recruitingTS']);
-
 recruiting.config(function($httpProvider) {
   var authToken = angular.element('meta[name="csrf-token"]').attr("content");
   $httpProvider.defaults.headers.common["X-CSRF-TOKEN"] = authToken;

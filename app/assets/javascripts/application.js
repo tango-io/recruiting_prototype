@@ -18,5 +18,6 @@
 //= require mm-foundation-tpls
 //= require angular/main
 //= require_tree .
+//= require_tree ./angular/controllers/
 
 $(function(){ $(document).foundation(); });
