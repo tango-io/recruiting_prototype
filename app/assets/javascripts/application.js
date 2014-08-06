@@ -17,7 +17,10 @@
 //= require angular
 //= require mm-foundation-tpls
 //= require angular/main
+//= require wow
 //= require_tree .
 //= require_tree ./angular/controllers/
 
 $(function(){ $(document).foundation(); });
+
+var WOW = new WOW().init();
