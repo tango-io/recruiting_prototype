@@ -1,0 +1,54 @@
+.candidate-card
+  background-color: #f8f8f8
+  border-radius: 0 5px 5px 0
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24), inset 10px 0 0 #34495e
+  margin-top: 20px
+  margin-bottom: 20px
+  @include transition (all 200ms ease-in-out)
+  @include transform (all 50ms ease-in-out)
+  &:hover
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), inset 10px 0 0 #34495e
+    @include transform (scale(1.05))
+  .candidate-card--pic
+    padding-left: 5px
+    padding-right: 0
+  .candidate-card--info
+    color: #444
+    padding: 10px 20px
+    h3
+      font-weight: 400
+      margin: 0
+    hr
+      margin-top: 0
+      margin-bottom: .5rem
+    p
+      margin: 0
+  .candidate-card--score
+    border-left: 1px solid #e5e5e5
+    border-radius: 0 5px 5px 0
+    padding: 11px
+    h5
+      color: #fff
+      margin: 0
+      margin-top: 22px
+    h1
+      font-weight: 400
+      font-size: 6rem
+      margin: 0
+      margin-top: -20px
+      padding: 0
+
+  .color--pass
+    background-color: #2ecc71
+    h1
+      color: #27ae60
+
+  .color--meh
+    background-color: #f1c40f
+    h1
+      color: #f39c12
+
+  .color--fail
+    background-color: #e74c3c
+    h1
+      color: #c0392b
