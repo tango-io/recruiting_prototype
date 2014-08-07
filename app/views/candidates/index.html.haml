@@ -1,0 +1,17 @@
+.recruitees-container(ng-controller='candidatesController')
+  .row.wow.fadeInUp(ng-repeat='candidate in candidates')
+    .large-9.large-centered.columns.candidate-card
+      .row
+        .large-3.column.candidate-card--pic
+          %img(ng-src= '{{candidate.avatar}}' alt='')
+        .large-9.columns
+          .row
+            .large-8.columns.candidate-card--info
+              %h3 {{candidate.full_name}}
+              %hr
+              %p Position: {{candidate.position}}
+              %p Expertise: {{candidate.expertise}}
+              %p Experience: {{candidate.experience}} years
+            .large-4.columns.text-center.candidate-card--score(ng-class='scoreType(candidate.global_score)')
+              %h5 Global Score
+              %h1 {{candidate.global_score}}
